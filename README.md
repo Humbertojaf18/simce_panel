@@ -108,23 +108,6 @@ diferencias en el último decimal debidas al hardware. Los modelos bayesianos
 corren en CPU; en un equipo convencional, el cuaderno 06 tarda unos minutos y
 el 08, unos quince.
 
-## Antes de publicar cuadernos ejecutados
-
-Las salidas de algunos cuadernos muestran nombres de establecimientos. Por la
-medida ética del informe (apartado 5.4), la versión pública las omite:
-
-```bash
-python herramientas/limpiar_salidas_identificables.py
-```
-
-El script reemplaza esas salidas por un aviso, cambia las rutas locales por
-`<ruta local>` y conserva el resto (cifras, tablas agregadas y figuras).
-
-## Versión del paquete
-
-`simce_panel` 1.1.2. Los cambios respecto de versiones anteriores, y las
-cifras que debe reproducir cada cuaderno, están en `simce_panel/CAMBIOS.md`.
-
 ## Licencia
 
 Por definir por el autor (código). Los datos pertenecen a sus instituciones de
