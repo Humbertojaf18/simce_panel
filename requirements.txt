@@ -1,0 +1,17 @@
+# Probado con Python 3.12.13. Para registrar las versiones exactas del entorno:
+#   pip freeze > requirements-lock.txt
+numpy
+pandas
+scipy
+statsmodels
+scikit-learn
+xgboost
+matplotlib
+pillow
+openpyxl
+jax
+numpyro
+libpysal
+esda
+folium
+jupyter
