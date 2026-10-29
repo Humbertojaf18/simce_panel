@@ -1,0 +1,21 @@
+# Datos originales e intermedios: públicos, pero pesados (ver Dataset/README.md)
+Dataset/*
+!Dataset/README.md
+!Dataset/muestra/
+!Dataset/muestra/**
+
+# Python y Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Salidas generadas
+*.html
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
