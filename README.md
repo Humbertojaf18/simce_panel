@@ -30,7 +30,9 @@ composición socioeconómica, territorio, dependencia y traspaso a los SLEP.
 │   ├── Externos/                   (no versionado) matrícula, IVE, pobreza comunal, superficie
 │   └── Unificados/                 (no versionado) salidas intermedias que generan los cuadernos
 ├── herramientas/                  generar_muestra.py y limpiar_salidas_identificables.py
-├── requirements.txt
+├── requirements.txt              bibliotecas sin versión fija
+├── requirements-lock.txt         versiones exactas de un entorno verificado con la muestra
+├── .gitignore
 └── README.md
 ```
 
@@ -47,13 +49,17 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-`requirements.txt` lista las bibliotecas sin fijar versiones. Para dejar
-registrado el entorno exacto con que se ejecutaron los cuadernos, desde el
-entorno activo:
+`requirements.txt` lista las bibliotecas sin fijar versiones. Para instalar
+exactamente las versiones con que se verificó la ejecución de la muestra
+(cuadernos 04, 05, 06, 08, 09 y 10, Python 3.12):
 
 ```bash
-pip freeze > requirements-lock.txt
+pip install -r requirements-lock.txt
 ```
+
+Ese entorno se comprobó con la muestra pública; los cuadernos publicados se
+ejecutaron con Python 3.12.13 en Windows 11, y las versiones exactas de ese
+entorno no quedaron registradas.
 
 ## Datos
 
